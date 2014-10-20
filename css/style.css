@@ -10,7 +10,7 @@
   ========================================================================== */
 body {
 	color: #3C4E38;
-	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0);
 	font-size: 16px;
 	line-height: 1.6em;
 	font-weight: 300;

@@ -39,9 +39,11 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+	        background-color: rgba(223, 216, 197,1);
+	        background-image: url(../../img/parallax/tex.png);
 }
 
 .fancybox-outer, .fancybox-inner {
