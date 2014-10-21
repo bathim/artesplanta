@@ -1,4 +1,4 @@
 <?php
 // To
-define("WEBMASTER_EMAIL", 'thelostdemonz@gmail.com');
+define("WEBMASTER_EMAIL", 'info@arteesplanta.com');
 ?>
