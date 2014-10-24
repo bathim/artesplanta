@@ -412,7 +412,7 @@
 							<div id="sendmessage">
 								 Tu mensaje ha sido enviado.
 							</div>
-							<form action="contact/contact.php" method="post" role="form" class="contactForm">
+							<form action="contact/verify.php" method="post" role="form" class="contactForm">
 							  <div class="form-group">
 								<label for="name">Nombre completo</label>
 								<input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="maxlen:4" data-msg="Por favor introduzca por lo menos 4 caracteres" />
@@ -433,13 +433,15 @@
 								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Queremos conocerte."></textarea>
 								<div class="validation"></div>
 							  </div>
-							  <div class="form-group">
-							  <?php
-							  require_once('contact/recaptchalib.php');
-							  $pubkey="6LfadvwSAAAAAGpxFvwuwMuqafGjBTnOBdWcSgnu";
-							  echo "<center>".recaptcha_get_html($pubkey)."</center>";
-							  ?>
-							  <div class="validation"></div>
+							  <div class="form-field"><label>Confirme que es un ser humano</label>
+							  	<script type="text/javascript">
+							  	var RecaptchaOptions = {"theme": "clean"};
+							  </script>
+							  <script type="text/javascript" src="//www.google.com/recaptcha/api/challenge?k=6LdmnPwSAAAAAJc2yH5mW0_9bGrSnRJJSGTddxoT&amp;lang="></script>
+							  <noscript>
+							  	<iframe src="//www.google.com/recaptcha/api/noscript?k=6LdmnPwSAAAAAJc2yH5mW0_9bGrSnRJJSGTddxoT" height="300" width="500" style="border:none;"></iframe><br/>
+							  	<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+							  	<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/></noscript>
 							  </div>
 							  <button type="submit" value="Enviar" class="btn btn-theme pull-left">Enviar</button>
 							</form>

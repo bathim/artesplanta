@@ -1,9 +1,18 @@
-<?php
-require_once('recaptchalib.php');
+ <?php
+  require_once('recaptchalib.php');
+  $privatekey = "6LdmnPwSAAAAAPhIOZxDV96o2o7-VVuKFeFWShlx";
+  $resp = recaptcha_check_answer ($privatekey,
+                                $_SERVER["REMOTE_ADDR"],
+                                $_POST["recaptcha_challenge_field"],
+                                $_POST["recaptcha_response_field"]);
 
-function enviarCorreo()
-{
-	$nombre = $_POST['name'];
+  if (!$resp->is_valid) {
+    // What happens when the CAPTCHA was entered incorrectly
+    die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
+         "(reCAPTCHA said: " . $resp->error . ")");
+  } else {
+    // Your code here to handle a successful verification
+    $nombre = $_POST['name'];
 	$email = $_POST['email'];
 	$subject = $_POST['subject'];
 	$mensaje = $_POST['mensaje'];
@@ -27,18 +36,5 @@ function enviarCorreo()
 	if($nombre != '' && $email != '' && $telefono != '' && $mensaje != ''){
 	    mail($dest,$asunto,$cuerpo,$headers); //ENVIAR!
 	}
-}
-
-$privkey = "6LdmnPwSAAAAAPhIOZxDV96o2o7-VVuKFeFWShlx"; 
-$verify = recaptcha_check_answer($privkey, $_SERVER['REMOTE_ADDR'], $_POST['recaptcha_challenge_field'], $_POST['recaptcha_response_field']);
-
-if ($verify->is_valid) {  
-  echo "Correcto!";
-  enviarCorreo();
-}
-else {  
-  echo "Upps parece que el codigo de verificacion no es correcto.";
-  echo '<a href="index.php">Clic aqui para regresar</a>';
-}
-
-?>
+  }
+  ?>
