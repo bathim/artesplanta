@@ -433,9 +433,16 @@
 								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Queremos conocerte."></textarea>
 								<div class="validation"></div>
 							  </div>
+							  <div class="form-group">
+							  <?php
+							  require_once('contact/recaptchalib.php');
+							  $pubkey="6LfadvwSAAAAAGpxFvwuwMuqafGjBTnOBdWcSgnu";
+							  echo "<center>".recaptcha_get_html($pubkey)."</center>";
+							  ?>
+							  <div class="validation"></div>
+							  </div>
 							  <button type="submit" value="Enviar" class="btn btn-theme pull-left">Enviar</button>
 							</form>
-
 						</div>
 					</div>
 					<!-- ./span12 -->
