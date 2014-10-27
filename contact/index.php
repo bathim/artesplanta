@@ -8,8 +8,7 @@
 </head>
 <body style="background:transparent">
 	<!--<br><br>-->
-	<div class="cform" id="contact-form">
-	<form action="contact.php" method="post" class="table-bordered col-xs-12 well" style="background:transparent">
+	<form action="contact.php" method="post" role="form" class="table-bordered col-xs-12 well" style="background:transparent">
 		<div class="form-group"><label for="name">Nombre: </label><input class="form-control" type="text" name="name" id="name" required placeholder="Tu nombre" /></div>
 		<div class="form-group"><label for="email">Email: </label><input class="form-control" type="email" name="email" id="email" required placeholder="tucorreo@gmail.com" /></div>
 		<div class="form-group"><label for="subject">Asunto:</label><input class="form-control" type="text" name="subject" id="subject" required placeholder="Asunto" /></div>
@@ -23,9 +22,8 @@
 		    	<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
 		    	<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/></noscript>
 		</div>
-		<input type="submit" value="enviar" class="btn btn-danger btn-lg col-md-offset-5"> 
-	</form>
-	</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="submit" value="enviar" class="btn btn-success btn-lg col-md-offset-5"> 
+	</form><!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
 </body>
 <script src='//www.google.com/recaptcha/api.js'></script>
 </html>
