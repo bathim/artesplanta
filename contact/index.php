@@ -16,9 +16,9 @@
 		<div class="form-field"><label>Confirme que es un ser humano</label>
 			<script type="text/javascript">
 			var RecaptchaOptions = {"theme": "white"};</script>
-		    <script type="text/javascript" src="//www.google.com/recaptcha/api/challenge?k=6LdmnPwSAAAAAJc2yH5mW0_9bGrSnRJJSGTddxoT&amp;lang="></script>
+		    <script type="text/javascript" src="//www.google.com/recaptcha/api/challenge?k=6Ld7ufwSAAAAAJQVEcBdwcP8dsWKd4zIUWjDaBJ5&amp;lang="></script>
 		    <noscript>
-		    	<iframe src="//www.google.com/recaptcha/api/noscript?k=6LdmnPwSAAAAAJc2yH5mW0_9bGrSnRJJSGTddxoT" height="300" width="400" style="border:none;"></iframe><br/>
+		    	<iframe src="//www.google.com/recaptcha/api/noscript?k=6Ld7ufwSAAAAAJQVEcBdwcP8dsWKd4zIUWjDaBJ5" height="300" width="400" style="border:none;"></iframe><br/>
 		    	<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
 		    	<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/></noscript>
 		</div>

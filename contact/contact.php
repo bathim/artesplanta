@@ -6,7 +6,7 @@ URL: http://www.bitrepository.com/
 
   include 'config.php';
   require_once('recaptchalib.php');
-  $privatekey = "6LdmnPwSAAAAAPhIOZxDV96o2o7-VVuKFeFWShlx";
+  $privatekey = "6Ld7ufwSAAAAAPrbZhOpSXGWLOnkExPesIrT5dYY";
   $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],
