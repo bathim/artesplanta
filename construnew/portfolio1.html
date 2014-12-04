@@ -12,7 +12,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
     <link href="css/lightbox.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link href="css/syntax/shCore.css" rel="stylesheet"  media="screen">
     <link href="css/syntax/shThemeDefault.css" rel="stylesheet"  media="screen">
 
@@ -102,8 +101,13 @@
                             <a href="timeline.html" >Nosotros</a>
                         </li> <!-- dropdown -->
                         <li class="dropdown">
-                            <a href="#" >Portfolio</a>
-                        </li> <!-- dropdown -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio1.html">STINU</a></li>
+                                <li><a href="portfolio2.html">SANTO DOMINGO</a></li>
+                                <li><a href="portfolio3.html">LA VENTA</a></li>
+                            </ul>
+                        </li>
                         <li class="dropdown">
                             <a href="contact.html">Contacto</a>
                         </li> <!-- dropdown -->
@@ -155,80 +159,83 @@
 
         <header class="wrap-title">
             <div class="container">
-                <h1 class="page-title">Portfolio</h1>
+                <h1 class="page-title">STINU</h1>
             </div>
         </header>
-          
         <div class="container">
-           <div class="row" id="Grid">
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/biistinu.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="biistinu.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>Bii stinu</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/santodomingoingenio.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="santodomingoingenio.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>Santo domingo ingenio</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/laventa.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="laventa.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>La venta</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/generica1.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="iframe2.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>Bii ioxho</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/generica2.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="iframe2.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>la mata aguascalientes</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-lg-4 col-md-4 mix 1 2">
-                   <div class="img-caption">
-                       <img src="img/obrassociales.jpg" class="img-responsive" alt="Image">
-                       <div class="caption">
-                           <div class="caption-content">
-                               <a  class="various" data-fancybox-type="iframe" href="iframe2.html"><i class="fa fa-search"></i>Más informacion</a>
-                               <h4>obras sociales</h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div> <!-- row -->
-        </div><!-- container  -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        </ol>
+                    <a class="logo-flotante"></a>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/G11.jpg" alt="First Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G12.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G13.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G14.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G15.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G16.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/G17.jpg" alt="Second Image">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                    <div class="panel-body">
+                        <p>Obra Civil del parque eólico (EDI) BII STINU, 160MW.</p>
+                        <p>Descripción: Ejecución de los trabajos consistentes en obra civil: cimentaciones, plataformas, viales y zanjas para el proyecto Parque</P>
+                        <p>Eólico EDI.</p>
+                        <p>Fecha: Noviembre 2011 – Abril 2012</p>
+                        <p>Cliente: GESA Eólica México S.A. de C.V.</p>
+                        <p>Lugar: Juchitán de Zaragoza, Oaxaca.</p>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer id="footer">
             <p>&copy; 2014 <a href="#">Construtoral</a>, Todos los derechos reservados.</p>
         </footer>
@@ -249,8 +256,7 @@
     <script src="js/holder.js"></script>
     <script src="js/app.js"></script>
     <script src="js/styleswitcher.js"></script>
-    <script src="js/fancybox/jquery.fancybox.js"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
     <script src="js/syntax/shCore.js"></script>
     <script src="js/syntax/shBrushXml.js"></script>
     <script src="js/syntax/shBrushJScript.js"></script>
@@ -258,22 +264,6 @@
     <script type="text/javascript">
         SyntaxHighlighter.all()
     </script>
-       <script type="text/javascript">
-    $(document).ready(function() {
-    $(".various").fancybox({
-        maxWidth    : 800,
-        maxHeight   : 600,
-        fitToView   : false,
-        width       : '70%',
-        height      : '70%',
-        autoSize    : false,
-        closeClick  : false,
-        openEffect  : 'none',
-        closeEffect : 'none'
-    });
-});
-    </script>
-    
 </body>
 
 </html>
